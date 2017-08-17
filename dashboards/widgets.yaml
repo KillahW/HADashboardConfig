@@ -1,0 +1,24 @@
+samuel_presence:
+    widget_type: sensor
+    title: Samuel
+    entity: sensor.samuels_plats
+bea_presence:
+    widget_type: sensor
+    title: Beatrice
+    entity: sensor.ar_bea_hemma
+john_presence:
+    widget_type: sensor
+    title: John
+    entity: sensor.ar_john_hemma
+yrtemp:
+    widget_type: sensor
+    title: Temperatur enligt Yr
+    entity: sensor.yr_temperature
+yrsymbol:
+    widget_type: sensor
+    title: Väder
+    entity: sensor.yr_symbol
+yrnederbord:
+    widget_type: sensor
+    title: Nederbörd
+    entity: sensor.yr_precipitation

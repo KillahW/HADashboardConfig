@@ -1,0 +1,24 @@
+AppDaemon:
+  disable_apps: 1
+  logfile: STDOUT
+  errorfile: STDERR
+  logsize: 100000
+  log_generations: 3
+  threads: 10
+#  cert_path: <path/to/root/CA/cert>
+  cert_verify: True
+  time_zone: <time zone>
+  api_port: 5000
+  api_key: !secret appdaemon_api_key
+#  api_ssl_certificate: <path/to/root/CA/cert>
+#  api_ssl_key: <path/to/root/CA/key>
+HASS:
+  ha_url: !secret hass_url
+  ha_key: !secret hass_api_password
+
+# Apps
+hello_world:
+  module: hello
+  class: HelloWorld
+HADashboard:
+  dash_url: http://192.168.1.15:5050
